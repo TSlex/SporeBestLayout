@@ -3,7 +3,7 @@
     public enum BuildingType
     {
         Empty = 0,
-        Home,
+        House,
         Work,
         Fun
     }

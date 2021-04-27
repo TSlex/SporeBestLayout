@@ -16,7 +16,7 @@ namespace SporeCity
             {
                 Building? building = type switch
                 {
-                    BuildingType.Home => new Home(),
+                    BuildingType.House => new House(),
                     BuildingType.Work => new Work(),
                     BuildingType.Fun => new Fun(),
                     _ => null

@@ -2,7 +2,7 @@
 
 namespace SporeCity.Buildings
 {
-    public class Home : Building
+    public class House : Building
     {
         public override (int work, int moral) Calculate()
         {
@@ -14,7 +14,7 @@ namespace SporeCity.Buildings
         
         public override string ToString()
         {
-            return "Home";
+            return "House";
         }
     }
 }
