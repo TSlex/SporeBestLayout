@@ -1,0 +1,16 @@
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\bin\Debug\net5.0\SporeCity.exe
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\bin\Debug\net5.0\SporeCity.deps.json
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\bin\Debug\net5.0\SporeCity.runtimeconfig.json
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\bin\Debug\net5.0\SporeCity.runtimeconfig.dev.json
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\bin\Debug\net5.0\SporeCity.dll
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\bin\Debug\net5.0\ref\SporeCity.dll
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\bin\Debug\net5.0\SporeCity.pdb
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\obj\Debug\net5.0\SporeCity.csprojAssemblyReference.cache
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\obj\Debug\net5.0\SporeCity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\obj\Debug\net5.0\SporeCity.AssemblyInfoInputs.cache
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\obj\Debug\net5.0\SporeCity.AssemblyInfo.cs
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\obj\Debug\net5.0\SporeCity.csproj.CoreCompileInputs.cache
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\obj\Debug\net5.0\SporeCity.dll
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\obj\Debug\net5.0\ref\SporeCity.dll
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\obj\Debug\net5.0\SporeCity.pdb
+C:\Users\alex1\RiderProjects\SporeCity\SporeCity\obj\Debug\net5.0\SporeCity.genruntimeconfig.cache
