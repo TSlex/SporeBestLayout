@@ -26,6 +26,9 @@ namespace SporeCity
                 Console.WriteLine("=============================");
                 Console.WriteLine("Available layouts:");
                 Console.WriteLine("(s), Space Stage");
+                Console.WriteLine("(ca), Civilization Type A");
+                Console.WriteLine("(cb), Civilization Type B");
+                Console.WriteLine("(cc), Civilization Type C");
                 Console.WriteLine("=============================");
                 Console.Write(">:");
                 var input = Console.ReadLine() ?? "";
@@ -44,6 +47,51 @@ namespace SporeCity
                         (false, new[] {2, 3, 9}),
                         (false, new[] {3, 8, 10}),
                         (false, new[] {4, 5, 9})
+                    };
+                    break;
+                }
+
+                if (input.StartsWith("ca"))
+                {
+                    configuration = new List<(bool nearCenter, int[] neighboursIndexes)>
+                    {
+                        (false, new[] {1}),
+                        (true, new[] {0, 2, 3}),
+                        (false, new[] {1, 3}),
+                        (false, new[] {1, 2, 4, 6}),
+                        (false, new[] {3, 5}),
+                        (false, new[] {4, 6, 7}),
+                        (true, new[] {3, 5, 7, 8}),
+                        (false, new[] {5, 6}),
+                        (true, new[] {6, 9, 10}),
+                        (false, new[] {8, 10}),
+                        (false, new[] {8, 9})
+                    };
+                    break;
+                }
+
+                if (input.StartsWith("cb"))
+                {
+                    configuration = new List<(bool nearCenter, int[] neighboursIndexes)>
+                    {
+                        (true, new[] {1}),
+                        (true, new[] {0}),
+                        (false, new[] {3}),
+                        (true, new[] {2, 4}),
+                        (true, new[] {3})
+                    };
+                    break;
+                }
+                
+                if (input.StartsWith("cc"))
+                {
+                    configuration = new List<(bool nearCenter, int[] neighboursIndexes)>
+                    {
+                        (true, new[] {1}),
+                        (false, new[] {0, 2}),
+                        (true, new[] {1, 3}),
+                        (true, new[] {2, 4}),
+                        (true, new[] {3})
                     };
                     break;
                 }
@@ -95,7 +143,7 @@ namespace SporeCity
                 var input = Console.ReadLine() ?? "0";
 
                 input = input.Length > 0 ? input : "0";
-                
+
                 if (CalculateMode.TryParse(input, out mode))
                 {
                     break;
@@ -170,7 +218,8 @@ namespace SporeCity
                 var (score, layout) = generator.GetBestLayouts(mode, minWork, minFun);
 
                 Console.WriteLine($"work units: {score.work}, moral: {score.moral}");
-                Console.WriteLine(string.Join("\n", layout.Take(20).Select(tuple => tuple.layout + $"| {tuple.price}$$")));
+                Console.WriteLine(string.Join("\n",
+                    layout.Take(20).Select(tuple => tuple.layout + $"| {tuple.price}$$")));
             }
             catch (IndexOutOfRangeException e)
             {
