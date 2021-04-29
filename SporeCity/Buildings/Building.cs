@@ -7,11 +7,11 @@ namespace SporeCity.Buildings
         public List<Building?> Neighbors { get; set; }
         public bool NearCenter { get; set; }
 
-        protected Building()
+        public Building()
         {
             Neighbors = new List<Building?>();
         }
 
-        public abstract (int work, int moral) Calculate();
+        public abstract (int work, int moral, int price) Calculate();
     }
 }

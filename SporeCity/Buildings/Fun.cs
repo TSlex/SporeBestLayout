@@ -4,8 +4,10 @@ namespace SporeCity.Buildings
 {
     public class Fun : Building
     {
-        public override (int work, int moral) Calculate()
+        public override (int work, int moral, int price) Calculate()
         {
+            const int price = 2;
+            
             var moral = 1 - Neighbors.Count(building => building is Work);
 
             if (NearCenter)
@@ -14,10 +16,10 @@ namespace SporeCity.Buildings
             }
             else if (!Neighbors.Any())
             {
-                return (0, 0);
+                return (0, 0, price);
             }
 
-            return (0, moral);
+            return (0, moral, price);
         }
 
         public override string ToString()
