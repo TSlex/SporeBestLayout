@@ -7,7 +7,7 @@ The approach is simple, simulate spore city ranking system and bruteforce it :)
 
 The programm uses the following city layout mapping
 ========
-![alt text](https://github.com/TSlex/SporeBestLayout/blob/master/placement_guide.png)
+![alt text](https://github.com/TSlex/SporeBestLayout/blob/master/space_stage_configuration.png)
 
 Result
 ========
