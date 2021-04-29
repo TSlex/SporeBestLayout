@@ -1,7 +1,7 @@
 # SporeBestLayout
 Simple programm to find the best spore layout :)
 
-Theres no executable, so if you want to play around, you need to know the basics of C# and .NET 5 sdk
+Theres no executable, so if you want to play around, you need to know the basics of C# and .NET 5 sdk      
 **UPD** There is now executable, but it is not so easy to use, at least now :)
 
 The approach is simple, simulate spore city ranking system and bruteforce it :)
