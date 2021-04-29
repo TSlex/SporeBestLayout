@@ -29,6 +29,8 @@ namespace SporeCity
                 Console.WriteLine("(ca), Civilization Type A");
                 Console.WriteLine("(cb), Civilization Type B");
                 Console.WriteLine("(cc), Civilization Type C");
+                Console.WriteLine("(cd), Civilization Type D");
+                Console.WriteLine("(ce), Civilization Type E");
                 Console.WriteLine("=============================");
                 Console.Write(">:");
                 var input = Console.ReadLine() ?? "";
@@ -92,6 +94,38 @@ namespace SporeCity
                         (true, new[] {1, 3}),
                         (true, new[] {2, 4}),
                         (true, new[] {3})
+                    };
+                    break;
+                }
+                
+                if (input.StartsWith("cd"))
+                {
+                    configuration = new List<(bool nearCenter, int[] neighboursIndexes)>
+                    {
+                        (false, new[] {1}),
+                        (true, new[] {0, 2}),
+                        (true, new[] {1, 3, 6}),
+                        (false, new[] {2, 4, 5}),
+                        (false, new[] {3}),
+                        (false, new[] {3}),
+                        (true, new[] {2, 7}),
+                        (true, new[] {6, 8, 9}),
+                        (false, new[] {7, 9}),
+                        (false, new[] {7, 8, 10}),
+                        (false, new[] {9})
+                    };
+                    break;
+                }
+                
+                if (input.StartsWith("ce"))
+                {
+                    configuration = new List<(bool nearCenter, int[] neighboursIndexes)>
+                    {
+                        (true, new[] {1}),
+                        (true, new[] {0, 2}),
+                        (true, new[] {1, 3}),
+                        (true, new[] {2, 4}),
+                        (true, new[] {3}),
                     };
                     break;
                 }
