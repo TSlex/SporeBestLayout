@@ -12,5 +12,6 @@ Global
 		{B625E27D-BAF6-4475-A11A-99D3BA57C08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B625E27D-BAF6-4475-A11A-99D3BA57C08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B625E27D-BAF6-4475-A11A-99D3BA57C08C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B625E27D-BAF6-4475-A11A-99D3BA57C08C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

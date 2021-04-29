@@ -169,7 +169,7 @@ namespace SporeCity
                 // });
                 var (score, layout) = generator.GetBestLayouts(mode, minWork, minFun);
 
-                Console.WriteLine(score);
+                Console.WriteLine($"work units: {score.work}, moral: {score.moral}");
                 Console.WriteLine(string.Join("\n", layout.Take(20).Select(tuple => tuple.layout + $"| {tuple.price}$$")));
             }
             catch (IndexOutOfRangeException e)
